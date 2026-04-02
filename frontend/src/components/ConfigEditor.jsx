@@ -4,7 +4,7 @@ import { X, Save } from 'lucide-react';
 
 const ConfigEditor = ({ config, isOpen, onClose, onSave }) => {
          if (!isOpen) return null;
-
+         
          const [jsonData, setJsonData] = useState(JSON.stringify(config.data, null, 2));
          const [error, setError] = useState('');
 
